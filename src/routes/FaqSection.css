@@ -1,0 +1,96 @@
+/* FAQ Section Container */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #b2fef7, #fda2d6); /* Softer gradient for a modern look */
+  min-height: 100vh; /* Ensure full height coverage */
+}
+
+/* FAQ Section Heading */
+.faq-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2a2d34; /* Darker tone for strong contrast */
+  font-weight: bold;
+}
+
+/* FAQ List */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 500px; /* Increased width for larger screens */
+}
+
+/* FAQ Item Styling */
+.faq-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* FAQ Image Styling */
+.faq-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fda2d6; /* Border to match the gradient theme */
+}
+
+/* FAQ Content Styling */
+.faq-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #2a2d34; /* Darker heading for clarity */
+  font-weight: 600;
+}
+
+.faq-content p {
+  font-size: 1rem;
+  color: #5f6368; /* Lighter gray for subtler contrast */
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 20px;
+  }
+
+  .faq-list {
+    max-width: 100%;
+  }
+
+  .faq-item {
+    padding: 20px;
+  }
+
+  .faq-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .faq-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .faq-content p {
+    font-size: 0.9rem;
+  }
+}
